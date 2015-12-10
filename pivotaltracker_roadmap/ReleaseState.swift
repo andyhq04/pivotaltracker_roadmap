@@ -8,6 +8,6 @@
 
 import Foundation
 
-public enum ReleaseState {
+@objc public enum ReleaseState: Int {
     case Accepted, Started, Planned, Unstarted, Unscheduled
 }
