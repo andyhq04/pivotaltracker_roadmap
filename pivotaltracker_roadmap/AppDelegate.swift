@@ -16,7 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        RKlcl_configure_by_name("RestKit/Network", 6)
+        RKlcl_configure_by_name("RestKit/ObjectMapping", 6)
+        
+        
         return true
     }
 
