@@ -61,4 +61,8 @@ public class ServiceConnector {
 
         RKObjectManager.setSharedManager(objectManager)
     }
+    
+    public func getReleaseService() -> ReleaseService {
+        return self.releaseService!
+    }
 }

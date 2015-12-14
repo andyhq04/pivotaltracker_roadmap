@@ -19,6 +19,7 @@
 		A1C939111C19D6DF005107CE /* ReleaseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C939101C19D6DF005107CE /* ReleaseState.swift */; };
 		A1C939141C19E1FB005107CE /* ReleaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C939131C19E1FB005107CE /* ReleaseService.swift */; };
 		A1C939161C1A1180005107CE /* ServiceConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C939151C1A1180005107CE /* ServiceConnector.swift */; };
+		A1C9391A1C1B0856005107CE /* FetchedResultsControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C939191C1B0856005107CE /* FetchedResultsControllerDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		A1C939131C19E1FB005107CE /* ReleaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReleaseService.swift; sourceTree = "<group>"; };
 		A1C939151C1A1180005107CE /* ServiceConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConnector.swift; sourceTree = "<group>"; };
 		A1C939171C1A1B4D005107CE /* pivotaltracker_roadmap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pivotaltracker_roadmap-Bridging-Header.h"; sourceTree = "<group>"; };
+		A1C939191C1B0856005107CE /* FetchedResultsControllerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsControllerDataSource.swift; sourceTree = "<group>"; };
 		B633F52AF6F576A91A3D452C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 		A1C938DC1C18EC0B005107CE /* pivotaltracker_roadmap */ = {
 			isa = PBXGroup;
 			children = (
+				A1C939181C1B02E3005107CE /* Persistence */,
 				A1C939121C19E14C005107CE /* Connector */,
 				A1C9390F1C19D6C4005107CE /* Enums */,
 				A1C9390C1C19B3B2005107CE /* Models */,
@@ -174,6 +177,14 @@
 				A1C939151C1A1180005107CE /* ServiceConnector.swift */,
 			);
 			name = Connector;
+			sourceTree = "<group>";
+		};
+		A1C939181C1B02E3005107CE /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				A1C939191C1B0856005107CE /* FetchedResultsControllerDataSource.swift */,
+			);
+			name = Persistence;
 			sourceTree = "<group>";
 		};
 		ABB4F366AF0BAE6DAF0684BA /* Pods */ = {
@@ -346,6 +357,7 @@
 			files = (
 				A1C9390E1C19B5B8005107CE /* Release.swift in Sources */,
 				A1C938E01C18EC0B005107CE /* AppDelegate.swift in Sources */,
+				A1C9391A1C1B0856005107CE /* FetchedResultsControllerDataSource.swift in Sources */,
 				A1C939161C1A1180005107CE /* ServiceConnector.swift in Sources */,
 				A1C938E31C18EC0B005107CE /* pivotaltracker_roadmap.xcdatamodeld in Sources */,
 				A1C9390B1C19AF8B005107CE /* RoadmapController.swift in Sources */,

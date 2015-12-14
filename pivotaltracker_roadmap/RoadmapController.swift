@@ -8,28 +8,26 @@
 
 import UIKit
 
-public class RoadmapController: UITableViewController {
+public class RoadmapController: UITableViewController, FetchedResultsControllerDataSourceDelegate {
+
+    private var projectId: String = "1234"
+    private var fetchedResultsControllerDataSource: FetchedResultsControllerDataSource?
 
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        fetchedResultsControllerDataSource = FetchedResultsControllerDataSource(tableView: self.tableView)
+        fetchedResultsControllerDataSource!.delegate = self
     }
     
-    public override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+    public override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        
+        ServiceConnector.sharedInstance.getReleaseService().getAll(projectId, success: nil)
+        fetchedResultsControllerDataSource!.setupReleaseFetchedResultsController()
     }
     
-    public override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    public override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        var roadmapCell = tableView.dequeueReusableCellWithIdentifier("roadmapCellId", forIndexPath: indexPath) as! UITableViewCell
-        
-        roadmapCell.textLabel!.text = "Title release"
-        
-        return roadmapCell
+    public func configureCell(cell: UITableViewCell, object: AnyObject) {
+        cell.textLabel!.text = "Title release"
     }
 }

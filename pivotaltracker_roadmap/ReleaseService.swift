@@ -14,6 +14,9 @@ public class ReleaseService {
     
     public init(managedObjectStore: RKManagedObjectStore) {
         self.managedObjectStore = managedObjectStore
+        
+        configureRoutes()
+        setupMapping()
     }
     
     public func setupMapping() {
@@ -32,7 +35,7 @@ public class ReleaseService {
             
         ]);
         releaseMapping.identificationAttributes = ["id"]
-        releaseMapping.addConnectionForRelationship("project", connectedBy: ["project_id": "id"])
+        //releaseMapping.addConnectionForRelationship("project", connectedBy: ["project_id": "id"])
         
         var dynamicMapping = RKDynamicMapping()
         
