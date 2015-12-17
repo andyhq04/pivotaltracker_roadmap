@@ -31,3 +31,226 @@ DerivedData
 # Carthage/Checkouts
 
 Carthage/Build
+Pods/Headers/Private/AFNetworking/AFHTTPClient.h
+Pods/Headers/Private/AFNetworking/AFHTTPRequestOperation.h
+Pods/Headers/Private/AFNetworking/AFImageRequestOperation.h
+Pods/Headers/Private/AFNetworking/AFJSONRequestOperation.h
+Pods/Headers/Private/AFNetworking/AFNetworkActivityIndicatorManager.h
+Pods/Headers/Private/AFNetworking/AFNetworking.h
+Pods/Headers/Private/AFNetworking/AFPropertyListRequestOperation.h
+Pods/Headers/Private/AFNetworking/AFURLConnectionOperation.h
+Pods/Headers/Private/AFNetworking/AFXMLRequestOperation.h
+Pods/Headers/Private/AFNetworking/UIImageView+AFNetworking.h
+Pods/Headers/Private/ISO8601DateFormatterValueTransformer/ISO8601DateFormatterValueTransformer.h
+Pods/Headers/Private/ISO8601DateFormatterValueTransformer/RKISO8601DateFormatter.h
+Pods/Headers/Private/RestKit/CoreData.h
+Pods/Headers/Private/RestKit/Network.h
+Pods/Headers/Private/RestKit/ObjectMapping.h
+Pods/Headers/Private/RestKit/RestKit.h
+Pods/Headers/Private/RestKit/Support.h
+Pods/Headers/Private/RestKit/CoreData/NSManagedObject+RKAdditions.h
+Pods/Headers/Private/RestKit/CoreData/NSManagedObjectContext+RKAdditions.h
+Pods/Headers/Private/RestKit/CoreData/RKConnectionDescription.h
+Pods/Headers/Private/RestKit/CoreData/RKCoreData.h
+Pods/Headers/Private/RestKit/CoreData/RKEntityByAttributeCache.h
+Pods/Headers/Private/RestKit/CoreData/RKEntityCache.h
+Pods/Headers/Private/RestKit/CoreData/RKEntityMapping.h
+Pods/Headers/Private/RestKit/CoreData/RKFetchRequestManagedObjectCache.h
+Pods/Headers/Private/RestKit/CoreData/RKInMemoryManagedObjectCache.h
+Pods/Headers/Private/RestKit/CoreData/RKManagedObjectCaching.h
+Pods/Headers/Private/RestKit/CoreData/RKManagedObjectImporter.h
+Pods/Headers/Private/RestKit/CoreData/RKManagedObjectMappingOperationDataSource.h
+Pods/Headers/Private/RestKit/CoreData/RKManagedObjectStore.h
+Pods/Headers/Private/RestKit/CoreData/RKPropertyInspector+CoreData.h
+Pods/Headers/Private/RestKit/CoreData/RKRelationshipConnectionOperation.h
+Pods/Headers/Private/RestKit/Network/RKHTTPRequestOperation.h
+Pods/Headers/Private/RestKit/Network/RKManagedObjectRequestOperation.h
+Pods/Headers/Private/RestKit/Network/RKObjectManager.h
+Pods/Headers/Private/RestKit/Network/RKObjectParameterization.h
+Pods/Headers/Private/RestKit/Network/RKObjectRequestOperation.h
+Pods/Headers/Private/RestKit/Network/RKObjectRequestOperationSubclass.h
+Pods/Headers/Private/RestKit/Network/RKPaginator.h
+Pods/Headers/Private/RestKit/Network/RKPathMatcher.h
+Pods/Headers/Private/RestKit/Network/RKRequestDescriptor.h
+Pods/Headers/Private/RestKit/Network/RKResponseDescriptor.h
+Pods/Headers/Private/RestKit/Network/RKResponseMapperOperation.h
+Pods/Headers/Private/RestKit/Network/RKRoute.h
+Pods/Headers/Private/RestKit/Network/RKRouter.h
+Pods/Headers/Private/RestKit/Network/RKRouteSet.h
+Pods/Headers/Private/RestKit/ObjectMapping/RKAttributeMapping.h
+Pods/Headers/Private/RestKit/ObjectMapping/RKDynamicMapping.h
+Pods/Headers/Private/RestKit/ObjectMapping/RKErrorMessage.h
+Pods/Headers/Private/RestKit/ObjectMapping/RKHTTPUtilities.h
+Pods/Headers/Private/RestKit/ObjectMapping/RKMapperOperation.h
+Pods/Headers/Private/RestKit/ObjectMapping/RKMapperOperation_Private.h
+Pods/Headers/Private/RestKit/ObjectMapping/RKMapping.h
+Pods/Headers/Private/RestKit/ObjectMapping/RKMappingErrors.h
+Pods/Headers/Private/RestKit/ObjectMapping/RKMappingOperation.h
+Pods/Headers/Private/RestKit/ObjectMapping/RKMappingOperationDataSource.h
+Pods/Headers/Private/RestKit/ObjectMapping/RKMappingResult.h
+Pods/Headers/Private/RestKit/ObjectMapping/RKObjectMapping.h
+Pods/Headers/Private/RestKit/ObjectMapping/RKObjectMappingMatcher.h
+Pods/Headers/Private/RestKit/ObjectMapping/RKObjectMappingOperationDataSource.h
+Pods/Headers/Private/RestKit/ObjectMapping/RKObjectUtilities.h
+Pods/Headers/Private/RestKit/ObjectMapping/RKPropertyInspector.h
+Pods/Headers/Private/RestKit/ObjectMapping/RKPropertyMapping.h
+Pods/Headers/Private/RestKit/ObjectMapping/RKRelationshipMapping.h
+Pods/Headers/Private/RestKit/Support/lcl_config_components_RK.h
+Pods/Headers/Private/RestKit/Support/lcl_config_extensions_RK.h
+Pods/Headers/Private/RestKit/Support/lcl_config_logger_RK.h
+Pods/Headers/Private/RestKit/Support/RKDictionaryUtilities.h
+Pods/Headers/Private/RestKit/Support/RKDotNetDateFormatter.h
+Pods/Headers/Private/RestKit/Support/RKErrors.h
+Pods/Headers/Private/RestKit/Support/RKLog.h
+Pods/Headers/Private/RestKit/Support/RKLumberjackLogger.h
+Pods/Headers/Private/RestKit/Support/RKMacros.h
+Pods/Headers/Private/RestKit/Support/RKMIMETypes.h
+Pods/Headers/Private/RestKit/Support/RKMIMETypeSerialization.h
+Pods/Headers/Private/RestKit/Support/RKNSJSONSerialization.h
+Pods/Headers/Private/RestKit/Support/RKOperationStateMachine.h
+Pods/Headers/Private/RestKit/Support/RKPathUtilities.h
+Pods/Headers/Private/RestKit/Support/RKSerialization.h
+Pods/Headers/Private/RestKit/Support/RKStringTokenizer.h
+Pods/Headers/Private/RestKit/Support/RKURLEncodedSerialization.h
+Pods/Headers/Private/RKValueTransformers/RKValueTransformers.h
+Pods/Headers/Private/SOCKit/SOCKit.h
+Pods/Headers/Private/TransitionKit/TKEvent.h
+Pods/Headers/Private/TransitionKit/TKState.h
+Pods/Headers/Private/TransitionKit/TKStateMachine.h
+Pods/Headers/Private/TransitionKit/TKTransition.h
+Pods/Headers/Private/TransitionKit/TransitionKit.h
+Pods/Headers/Private/Vendor/LibComponentLogging/Core/lcl_RK.h
+Pods/Headers/Public/AFNetworking/AFHTTPClient.h
+Pods/Headers/Public/AFNetworking/AFHTTPRequestOperation.h
+Pods/Headers/Public/AFNetworking/AFImageRequestOperation.h
+Pods/Headers/Public/AFNetworking/AFJSONRequestOperation.h
+Pods/Headers/Public/AFNetworking/AFNetworkActivityIndicatorManager.h
+Pods/Headers/Public/AFNetworking/AFNetworking.h
+Pods/Headers/Public/AFNetworking/AFPropertyListRequestOperation.h
+Pods/Headers/Public/AFNetworking/AFURLConnectionOperation.h
+Pods/Headers/Public/AFNetworking/AFXMLRequestOperation.h
+Pods/Headers/Public/AFNetworking/UIImageView+AFNetworking.h
+Pods/Headers/Public/ISO8601DateFormatterValueTransformer/ISO8601DateFormatterValueTransformer.h
+Pods/Headers/Public/ISO8601DateFormatterValueTransformer/RKISO8601DateFormatter.h
+Pods/Headers/Public/RestKit/CoreData.h
+Pods/Headers/Public/RestKit/Network.h
+Pods/Headers/Public/RestKit/ObjectMapping.h
+Pods/Headers/Public/RestKit/RestKit.h
+Pods/Headers/Public/RestKit/Support.h
+Pods/Headers/Public/RestKit/CoreData/NSManagedObject+RKAdditions.h
+Pods/Headers/Public/RestKit/CoreData/NSManagedObjectContext+RKAdditions.h
+Pods/Headers/Public/RestKit/CoreData/RKConnectionDescription.h
+Pods/Headers/Public/RestKit/CoreData/RKCoreData.h
+Pods/Headers/Public/RestKit/CoreData/RKEntityByAttributeCache.h
+Pods/Headers/Public/RestKit/CoreData/RKEntityCache.h
+Pods/Headers/Public/RestKit/CoreData/RKEntityMapping.h
+Pods/Headers/Public/RestKit/CoreData/RKFetchRequestManagedObjectCache.h
+Pods/Headers/Public/RestKit/CoreData/RKInMemoryManagedObjectCache.h
+Pods/Headers/Public/RestKit/CoreData/RKManagedObjectCaching.h
+Pods/Headers/Public/RestKit/CoreData/RKManagedObjectImporter.h
+Pods/Headers/Public/RestKit/CoreData/RKManagedObjectMappingOperationDataSource.h
+Pods/Headers/Public/RestKit/CoreData/RKManagedObjectStore.h
+Pods/Headers/Public/RestKit/CoreData/RKPropertyInspector+CoreData.h
+Pods/Headers/Public/RestKit/CoreData/RKRelationshipConnectionOperation.h
+Pods/Headers/Public/RestKit/Network/RKHTTPRequestOperation.h
+Pods/Headers/Public/RestKit/Network/RKManagedObjectRequestOperation.h
+Pods/Headers/Public/RestKit/Network/RKObjectManager.h
+Pods/Headers/Public/RestKit/Network/RKObjectParameterization.h
+Pods/Headers/Public/RestKit/Network/RKObjectRequestOperation.h
+Pods/Headers/Public/RestKit/Network/RKObjectRequestOperationSubclass.h
+Pods/Headers/Public/RestKit/Network/RKPaginator.h
+Pods/Headers/Public/RestKit/Network/RKPathMatcher.h
+Pods/Headers/Public/RestKit/Network/RKRequestDescriptor.h
+Pods/Headers/Public/RestKit/Network/RKResponseDescriptor.h
+Pods/Headers/Public/RestKit/Network/RKResponseMapperOperation.h
+Pods/Headers/Public/RestKit/Network/RKRoute.h
+Pods/Headers/Public/RestKit/Network/RKRouter.h
+Pods/Headers/Public/RestKit/Network/RKRouteSet.h
+Pods/Headers/Public/RestKit/ObjectMapping/RKAttributeMapping.h
+Pods/Headers/Public/RestKit/ObjectMapping/RKDynamicMapping.h
+Pods/Headers/Public/RestKit/ObjectMapping/RKErrorMessage.h
+Pods/Headers/Public/RestKit/ObjectMapping/RKHTTPUtilities.h
+Pods/Headers/Public/RestKit/ObjectMapping/RKMapperOperation.h
+Pods/Headers/Public/RestKit/ObjectMapping/RKMapperOperation_Private.h
+Pods/Headers/Public/RestKit/ObjectMapping/RKMapping.h
+Pods/Headers/Public/RestKit/ObjectMapping/RKMappingErrors.h
+Pods/Headers/Public/RestKit/ObjectMapping/RKMappingOperation.h
+Pods/Headers/Public/RestKit/ObjectMapping/RKMappingOperationDataSource.h
+Pods/Headers/Public/RestKit/ObjectMapping/RKMappingResult.h
+Pods/Headers/Public/RestKit/ObjectMapping/RKObjectMapping.h
+Pods/Headers/Public/RestKit/ObjectMapping/RKObjectMappingMatcher.h
+Pods/Headers/Public/RestKit/ObjectMapping/RKObjectMappingOperationDataSource.h
+Pods/Headers/Public/RestKit/ObjectMapping/RKObjectUtilities.h
+Pods/Headers/Public/RestKit/ObjectMapping/RKPropertyInspector.h
+Pods/Headers/Public/RestKit/ObjectMapping/RKPropertyMapping.h
+Pods/Headers/Public/RestKit/ObjectMapping/RKRelationshipMapping.h
+Pods/Headers/Public/RestKit/Support/lcl_config_components_RK.h
+Pods/Headers/Public/RestKit/Support/lcl_config_extensions_RK.h
+Pods/Headers/Public/RestKit/Support/lcl_config_logger_RK.h
+Pods/Headers/Public/RestKit/Support/RKDictionaryUtilities.h
+Pods/Headers/Public/RestKit/Support/RKDotNetDateFormatter.h
+Pods/Headers/Public/RestKit/Support/RKErrors.h
+Pods/Headers/Public/RestKit/Support/RKLog.h
+Pods/Headers/Public/RestKit/Support/RKLumberjackLogger.h
+Pods/Headers/Public/RestKit/Support/RKMacros.h
+Pods/Headers/Public/RestKit/Support/RKMIMETypes.h
+Pods/Headers/Public/RestKit/Support/RKMIMETypeSerialization.h
+Pods/Headers/Public/RestKit/Support/RKNSJSONSerialization.h
+Pods/Headers/Public/RestKit/Support/RKOperationStateMachine.h
+Pods/Headers/Public/RestKit/Support/RKPathUtilities.h
+Pods/Headers/Public/RestKit/Support/RKSerialization.h
+Pods/Headers/Public/RestKit/Support/RKStringTokenizer.h
+Pods/Headers/Public/RestKit/Support/RKURLEncodedSerialization.h
+Pods/Headers/Public/RKValueTransformers/RKValueTransformers.h
+Pods/Headers/Public/SOCKit/SOCKit.h
+Pods/Headers/Public/TransitionKit/TKEvent.h
+Pods/Headers/Public/TransitionKit/TKState.h
+Pods/Headers/Public/TransitionKit/TKStateMachine.h
+Pods/Headers/Public/TransitionKit/TKTransition.h
+Pods/Headers/Public/TransitionKit/TransitionKit.h
+Pods/Headers/Public/Vendor/LibComponentLogging/Core/lcl_RK.h
+Pods/ISO8601DateFormatterValueTransformer/LICENSE
+Pods/ISO8601DateFormatterValueTransformer/README.md
+Pods/ISO8601DateFormatterValueTransformer/Code/ISO8601DateFormatterValueTransformer.h
+Pods/ISO8601DateFormatterValueTransformer/Code/ISO8601DateFormatterValueTransformer.m
+Pods/ISO8601DateFormatterValueTransformer/Code/RKISO8601DateFormatter.h
+Pods/ISO8601DateFormatterValueTransformer/Code/RKISO8601DateFormatter.m
+Pods/RestKit/Code/CoreData/RKCoreData.h
+Pods/RestKit/Code/Network/RKObjectRequestOperationSubclass.h
+Pods/RestKit/Code/Network/RKPathMatcher.h
+Pods/RestKit/Code/Network/RKPathMatcher.m
+Pods/RestKit/Code/Support/RKLumberjackLogger.h
+Pods/RestKit/Code/Support/RKLumberjackLogger.m
+Pods/RestKit/Code/Support/RKStringTokenizer.h
+Pods/RestKit/Code/Support/RKStringTokenizer.m
+Pods/RKValueTransformers/LICENSE
+Pods/RKValueTransformers/README.md
+Pods/RKValueTransformers/Code/RKValueTransformers.h
+Pods/RKValueTransformers/Code/RKValueTransformers.m
+Pods/Target Support Files/AFNetworking/AFNetworking-dummy.m
+Pods/Target Support Files/AFNetworking/AFNetworking-prefix.pch
+Pods/Target Support Files/AFNetworking/AFNetworking.xcconfig
+Pods/Target Support Files/ISO8601DateFormatterValueTransformer/ISO8601DateFormatterValueTransformer-dummy.m
+Pods/Target Support Files/ISO8601DateFormatterValueTransformer/ISO8601DateFormatterValueTransformer-prefix.pch
+Pods/Target Support Files/ISO8601DateFormatterValueTransformer/ISO8601DateFormatterValueTransformer.xcconfig
+Pods/Target Support Files/Pods/Pods-acknowledgements.markdown
+Pods/Target Support Files/Pods/Pods-acknowledgements.plist
+Pods/Target Support Files/Pods/Pods-dummy.m
+Pods/Target Support Files/Pods/Pods-frameworks.sh
+Pods/Target Support Files/Pods/Pods-resources.sh
+Pods/Target Support Files/Pods/Pods.debug.xcconfig
+Pods/Target Support Files/Pods/Pods.release.xcconfig
+Pods/Target Support Files/RestKit/RestKit-dummy.m
+Pods/Target Support Files/RestKit/RestKit-prefix.pch
+Pods/Target Support Files/RestKit/RestKit.xcconfig
+Pods/Target Support Files/RKValueTransformers/RKValueTransformers-dummy.m
+Pods/Target Support Files/RKValueTransformers/RKValueTransformers-prefix.pch
+Pods/Target Support Files/RKValueTransformers/RKValueTransformers.xcconfig
+Pods/Target Support Files/SOCKit/SOCKit-dummy.m
+Pods/Target Support Files/SOCKit/SOCKit-prefix.pch
+Pods/Target Support Files/SOCKit/SOCKit.xcconfig
+Pods/Target Support Files/TransitionKit/TransitionKit-dummy.m
+Pods/Target Support Files/TransitionKit/TransitionKit-prefix.pch
+Pods/Target Support Files/TransitionKit/TransitionKit.xcconfig
+Pods/TransitionKit/Code/TKTransition.h
+Pods/TransitionKit/Code/TKTransition.m
