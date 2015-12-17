@@ -31,7 +31,8 @@ public class ReleaseService {
             "accepted_at": "accepted_at",
             "created_at": "created_at",
             "updated_at": "updated_at",
-            "project_id": "project_id"
+            "project_id": "project_id",
+            "@metadata.mapping.collectionIndex": "order"
             
         ]);
         releaseMapping.identificationAttributes = ["id"]
