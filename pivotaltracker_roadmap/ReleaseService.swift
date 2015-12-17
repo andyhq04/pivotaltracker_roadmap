@@ -15,8 +15,8 @@ public class ReleaseService {
     public init(managedObjectStore: RKManagedObjectStore) {
         self.managedObjectStore = managedObjectStore
         
-        configureRoutes()
         setupMapping()
+        configureRoutes()
     }
     
     public func setupMapping() {
@@ -42,8 +42,7 @@ public class ReleaseService {
         dynamicMapping.addMatcher(RKObjectMappingMatcher(keyPath: "story_type", expectedValue: "release", objectMapping: releaseMapping))
         
         var responseDescriptor = RKResponseDescriptor(mapping: dynamicMapping, method: RKRequestMethod.Any, pathPattern: "projects/:project_id/stories", keyPath: nil, statusCodes: RKStatusCodeIndexSetForClass(RKStatusCodeClass.Successful))
-        var responseEditDescriptor = RKResponseDescriptor(mapping: dynamicMapping, method: RKRequestMethod.Any, pathPattern: "projects/:project_id/stories/:id", keyPath: nil, statusCodes: RKStatusCodeIndexSetForClass(RKStatusCodeClass.Successful))
-        
+
         var releaseRequestMapping = RKEntityMapping(forEntityForName: "Release", inManagedObjectStore:managedObjectStore)
         releaseRequestMapping.addAttributeMappingsFromDictionary([
             "id": "id",
@@ -52,7 +51,7 @@ public class ReleaseService {
             "story_type": "type",
             "deadline": "deadline",
             "current_state": "state"
-            ]);
+        ]);
         releaseRequestMapping.identificationAttributes = ["id"]
         
         var dynamicInverseMapping = RKDynamicMapping()
@@ -62,10 +61,12 @@ public class ReleaseService {
         
         RKObjectManager.sharedManager().addResponseDescriptor(responseDescriptor)
         RKObjectManager.sharedManager().addRequestDescriptor(releaseRequestDescriptor)
+        
+        //self.managedObjectStore.managedObjectCache = RKInMemoryManagedObjectCache(managedObjectContext: managedObjectStore.mainQueueManagedObjectContext)//[[RKInMemoryManagedObjectCache alloc] initWithManagedObjectContext:managedObjectSyore.persistentStoreManagedObjectContext];
     }
     
     public func configureRoutes() {
-        RKObjectManager.sharedManager().router.routeSet.addRoute(RKRoute(name: "stories_index", pathPattern: "projects/:project_id/stories?fields=id,name,description,estimate,current_state,story_type,accepted_at,created_at,updated_at,project_id,requested_by,labels,owners,deadline", method: RKRequestMethod.GET))
+        RKObjectManager.sharedManager().router.routeSet.addRoute(RKRoute(name: "stories_index", pathPattern: "projects/:project_id/stories", method: RKRequestMethod.GET))
     }
     
     public func getAll(projectId: String, success: ((operation: RKObjectRequestOperation!, mappingResult: RKMappingResult!) -> Void)!) -> Void {

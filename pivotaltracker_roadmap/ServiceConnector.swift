@@ -28,7 +28,16 @@ public class ServiceConnector {
     }
     
     public init() {
+        
+    }
+    
+    public func setupConnector() {
         self.setupObjectManager()
+        RKMIMETypeSerialization.registerClass(RKNSJSONSerialization.self, forMIMEType: "application/json")
+        RKObjectManager.sharedManager().setAcceptHeaderWithMIMEType(RKMIMETypeJSON)
+        RKObjectManager.sharedManager().requestSerializationMIMEType = RKMIMETypeJSON
+        RKObjectManager.sharedManager().HTTPClient.setDefaultHeader("Content-Type", value: "application/json")
+        RKObjectManager.sharedManager().HTTPClient.setDefaultHeader("X-TrackerToken", value: "047e0cf32d97cc7082c298036d120aa8")
         
         self.releaseService = ReleaseService(managedObjectStore: managedObjectStore!)
     }

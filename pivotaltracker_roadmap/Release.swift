@@ -18,6 +18,7 @@ public class Release: NSManagedObject {
     @NSManaged public var desc: String
     @NSManaged public var id: NSNumber
     @NSManaged public var name: String
+    @NSManaged public var type: String
     @NSManaged public var order: NSNumber
     @NSManaged public var requested_by_id: NSNumber
     @NSManaged public var updated_at: NSDate

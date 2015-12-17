@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         RKlcl_configure_by_name("RestKit/Network", 6)
         RKlcl_configure_by_name("RestKit/ObjectMapping", 6)
         
+        ServiceConnector.sharedInstance.setupConnector()
         
         return true
     }

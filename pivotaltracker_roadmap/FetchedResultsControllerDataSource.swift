@@ -48,20 +48,41 @@ public class FetchedResultsControllerDataSource: NSObject, UITableViewDataSource
     }
     
     public func controllerDidChangeContent(controller: NSFetchedResultsController) {
-    
+        self.tableView.beginUpdates()
     }
 
     public func controllerWillChangeContent(controller: NSFetchedResultsController) {
-
+        self.tableView.endUpdates()
     }
     
     public func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
-        
+        switch type {
+        case NSFetchedResultsChangeType.Insert:
+            if newIndexPath!.section == 0 {
+                tableView.insertRowsAtIndexPaths([newIndexPath!], withRowAnimation: UITableViewRowAnimation.Fade)
+            }
+        case NSFetchedResultsChangeType.Delete:
+            var newIndexPath = NSIndexPath(forRow: indexPath!.row, inSection: 0)
+            
+            tableView.deleteRowsAtIndexPaths([newIndexPath], withRowAnimation: .Fade)
+        case NSFetchedResultsChangeType.Update:
+            var newIndexPath = NSIndexPath(forRow: indexPath!.row, inSection: 0)
+            
+            tableView.reloadRowsAtIndexPaths([newIndexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+        case NSFetchedResultsChangeType.Move:
+            
+            var fromIndexPath = NSIndexPath(forRow: indexPath!.row, inSection: 0)
+            var toIndexPath = NSIndexPath(forRow: newIndexPath!.row, inSection: 0)
+            
+            tableView.moveRowAtIndexPath(fromIndexPath, toIndexPath: toIndexPath)
+        default:
+            return
+        }
     }
     
     public func setupReleaseFetchedResultsController() {
         self.fetchedResultsController.delegate = self
-        //var query = String(format: "project_id == %@", "1233")
+        var query = String(format: "project_id == 1438492")
         var fetchRequest = NSFetchRequest(entityName: NSStringFromClass(Release.self))
 
         fetchRequest.fetchBatchSize = 15
@@ -69,8 +90,8 @@ public class FetchedResultsControllerDataSource: NSObject, UITableViewDataSource
         var sortDescriptor = NSSortDescriptor(key: "order", ascending:true)
         fetchRequest.sortDescriptors = [sortDescriptor]
         
-        //var predicate = NSPredicate(format: query)
-        //fetchRequest.predicate = predicate
+        var predicate = NSPredicate(format: query)
+        fetchRequest.predicate = predicate
         
         fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: RKManagedObjectStore.defaultStore().mainQueueManagedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
 

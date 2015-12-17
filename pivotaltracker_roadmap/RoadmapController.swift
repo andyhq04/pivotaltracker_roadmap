@@ -10,7 +10,7 @@ import UIKit
 
 public class RoadmapController: UITableViewController, FetchedResultsControllerDataSourceDelegate {
 
-    private var projectId: String = "1234"
+    private var projectId: String = "1438492"
     private var fetchedResultsControllerDataSource: FetchedResultsControllerDataSource?
 
     public override func viewDidLoad() {
@@ -23,11 +23,15 @@ public class RoadmapController: UITableViewController, FetchedResultsControllerD
     public override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
         
-        ServiceConnector.sharedInstance.getReleaseService().getAll(projectId, success: nil)
-        fetchedResultsControllerDataSource!.setupReleaseFetchedResultsController()
+        ServiceConnector.sharedInstance.getReleaseService().getAll(projectId, success: { (operation, mappingResult) -> Void in
+            self.fetchedResultsControllerDataSource!.setupReleaseFetchedResultsController()
+            self.tableView.reloadData()
+        })
     }
     
     public func configureCell(cell: UITableViewCell, object: AnyObject) {
-        cell.textLabel!.text = "Title release"
+        var release = object as! Release
+        
+        cell.textLabel!.text = release.name
     }
 }

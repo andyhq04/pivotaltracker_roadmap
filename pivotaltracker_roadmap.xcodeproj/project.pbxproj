@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		41D7F297809FAB8973D96572 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 013075F7C32808F60ABA0AFA /* libPods.a */; };
+		A149481C1C20C84F00DCAFC9 /* ReleaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A149481B1C20C84F00DCAFC9 /* ReleaseService.swift */; };
 		A1C938E01C18EC0B005107CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C938DF1C18EC0B005107CE /* AppDelegate.swift */; };
 		A1C938E31C18EC0B005107CE /* pivotaltracker_roadmap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1C938E11C18EC0B005107CE /* pivotaltracker_roadmap.xcdatamodeld */; };
 		A1C938E81C18EC0B005107CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C938E61C18EC0B005107CE /* Main.storyboard */; };
@@ -17,7 +18,6 @@
 		A1C9390B1C19AF8B005107CE /* RoadmapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9390A1C19AF8B005107CE /* RoadmapController.swift */; };
 		A1C9390E1C19B5B8005107CE /* Release.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9390D1C19B5B8005107CE /* Release.swift */; };
 		A1C939111C19D6DF005107CE /* ReleaseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C939101C19D6DF005107CE /* ReleaseState.swift */; };
-		A1C939141C19E1FB005107CE /* ReleaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C939131C19E1FB005107CE /* ReleaseService.swift */; };
 		A1C939161C1A1180005107CE /* ServiceConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C939151C1A1180005107CE /* ServiceConnector.swift */; };
 		A1C9391A1C1B0856005107CE /* FetchedResultsControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C939191C1B0856005107CE /* FetchedResultsControllerDataSource.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +35,7 @@
 /* Begin PBXFileReference section */
 		013075F7C32808F60ABA0AFA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BC1E9E347625E52E5BF0A6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A149481B1C20C84F00DCAFC9 /* ReleaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReleaseService.swift; sourceTree = "<group>"; };
 		A1C938DA1C18EC0B005107CE /* pivotaltracker_roadmap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pivotaltracker_roadmap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C938DE1C18EC0B005107CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C938DF1C18EC0B005107CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		A1C9390A1C19AF8B005107CE /* RoadmapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoadmapController.swift; sourceTree = "<group>"; };
 		A1C9390D1C19B5B8005107CE /* Release.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Release.swift; sourceTree = "<group>"; };
 		A1C939101C19D6DF005107CE /* ReleaseState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReleaseState.swift; sourceTree = "<group>"; };
-		A1C939131C19E1FB005107CE /* ReleaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReleaseService.swift; sourceTree = "<group>"; };
 		A1C939151C1A1180005107CE /* ServiceConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConnector.swift; sourceTree = "<group>"; };
 		A1C939171C1A1B4D005107CE /* pivotaltracker_roadmap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pivotaltracker_roadmap-Bridging-Header.h"; sourceTree = "<group>"; };
 		A1C939191C1B0856005107CE /* FetchedResultsControllerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsControllerDataSource.swift; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 		A1C939121C19E14C005107CE /* Connector */ = {
 			isa = PBXGroup;
 			children = (
-				A1C939131C19E1FB005107CE /* ReleaseService.swift */,
+				A149481B1C20C84F00DCAFC9 /* ReleaseService.swift */,
 				A1C939151C1A1180005107CE /* ServiceConnector.swift */,
 			);
 			name = Connector;
@@ -356,13 +356,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1C9390E1C19B5B8005107CE /* Release.swift in Sources */,
+				A149481C1C20C84F00DCAFC9 /* ReleaseService.swift in Sources */,
 				A1C938E01C18EC0B005107CE /* AppDelegate.swift in Sources */,
 				A1C9391A1C1B0856005107CE /* FetchedResultsControllerDataSource.swift in Sources */,
 				A1C939161C1A1180005107CE /* ServiceConnector.swift in Sources */,
 				A1C938E31C18EC0B005107CE /* pivotaltracker_roadmap.xcdatamodeld in Sources */,
 				A1C9390B1C19AF8B005107CE /* RoadmapController.swift in Sources */,
 				A1C939111C19D6DF005107CE /* ReleaseState.swift in Sources */,
-				A1C939141C19E1FB005107CE /* ReleaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
